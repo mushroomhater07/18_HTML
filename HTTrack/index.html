@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Login</title>
+<center>
+<h1>Login</h1>
+</center>
+</head>
+<body>
+<script>
+function clicked() {
+
+	var user = document.getElementById('username');
+	var pass = document.getElementById('password');
+	
+	var coruser = "test";
+	var corpass = "123";
+	
+	if(user.value == coruser) {
+	
+		if(pass.value == corpass) {
+		
+			window.alert("You are logged in as " + user.value);
+			window.open("http://www.nicksdesk.com");
+		
+		} else {
+		
+			window.alert("Incorrect username or password!");
+		
+		}
+	
+	} else {
+	
+			window.alert("Incorrect username or password!");
+	
+	}
+
+}
+</script>
+<center>
+<input type="text" id="username" placeholder="Username"><br />
+<input type="password" id="password" placeholder="Password"><br />
+<input type="button" value="Log on" onClick="clicked()">
+</center>
+</body>
+</html>

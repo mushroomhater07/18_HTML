@@ -1,0 +1,89 @@
+@for $i from 1 through 1000 {
+	$red: random(105);    //add up 255 to normal colour
+	$green: random(105) ;
+	$blue: random(105) ;
+	
+	main div:nth-child(#{$i}){
+		background: rgb($red, $green, $blue);
+	}
+} 
+@for $i from 1 through 100 {
+	$red: random(85)+170;    //add up 255 to normal colour
+	$green: random(85)+170;
+	$blue: random(85)+170;
+	
+	main a div:nth-child(#{$i}){
+		background: rgb($red, $green, $blue);
+	}
+} 
+
+@mixin bigger($c, $r){
+	grid-column-end: span $c;
+	grid-row-end: span $r;
+}
+
+body {
+    background: #000;
+	margin: 1vw 0 0 1vw;
+	font-size: 2vw;
+}
+
+main {
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+$layout-breakpoint-small: 960px;
+
+@media (min-width: $layout-breakpoint-small) {
+  main {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  div{
+    min-height: 12.5vw !important;
+  }
+}
+div {
+    text-align: center;
+	box-sizing: border-box;
+	border-right: 1vw solid #000; //grid
+	border-bottom: 1vw solid #000; //grid
+	width: 100%;
+	min-height: 25vw;     //box height
+	display: flex;  //text position
+	justify-content: center;
+	align-items: center;
+    
+}
+a{
+    font-size: 3vw;
+    color: #0000EE;
+    text-decoration:none;
+    &:not(:empty){          //if text
+        
+        // background: #B0ffff !important;
+        border: 1vw solid #fff inset !important;
+        // margin-bottom: 1vw;margin-right: 1vw;
+        border-radius: 50%;
+        position: sticky;
+        top: 0;
+        &.big{
+            top: 12.5vw;
+        }
+    }
+}
+
+
+.Hbig {
+	@include bigger(2, 1);
+}
+
+.Vbig {
+	@include bigger(1, 2);
+}
+
+.Rbig {
+	@include bigger(2, 2);
+	font-size: 2em;
+}

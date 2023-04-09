@@ -1,0 +1,121 @@
+body{padding-top: 57px;background-color: #AEA8BB;}
+header{
+    background: linear-gradient(rgba(174, 168, 187,0.1),rgba(0,0,0,0.9)), url("../img/fireplace.gif");
+    height: 700px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: block;
+    color: #FFF;
+    text-align: center;
+}
+header h1{
+    padding-top:300px;
+    padding-bottom: 80px;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #FFFFFF;
+    transition: all 0.5s;
+}
+@media (max-width: 768px) {
+    header h1{
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+}
+header a{
+    color:#FFF;
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all 0.5s cubic-bezier(0, 0, 0.21, 1)
+}
+
+header i#arrow{
+    padding-top: 30px;
+    transition: 1s;
+}
+header a:hover ~ h1{
+    transform: scale(1.05);
+}
+header a:hover ~ i#arrow{
+    padding-top: 70px;
+}
+header a:hover{
+    color:#000;
+    background: #fff;
+    text-decoration: none;
+}
+header i#arrow:hover {
+    padding-top: 70px;
+}
+i#ig{
+    margin-top: 15px; 
+    margin-left: 10px;
+}
+.ha{
+    width:80px;
+}
+.ha1{
+    width: 100px;
+}
+.ha3{
+    width: 110px;
+}
+.ha2{
+    width:85px;
+}
+.ha4{
+    width: 150px
+}
+#gall{
+	margin-top:50px
+}
+#highlight{
+    text-align: center;
+}
+.gallery{
+    display: inline-block;
+    vertical-align: top;
+    box-align: middle;
+    margin: auto;
+    padding: 10px;
+}
+.newpic img{
+    height: 300px;
+    width: 280px;
+}
+.pic img{
+    height: 380px;
+    width: 280px;
+}
+.gallery img{
+    margin: 0;
+    cursor: pointer;
+}
+.gallery img:hover , .gallery img:active{
+    transition: transform 0.5s;
+    transform: scale(1.4);
+    box-shadow: 0px 0px 40px 60px rgba(145, 123, 188,0.8);
+}
+.galleryboarder{
+    text-align: center;
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 30px;
+}
+@media (max-width: 1040px) {
+    .gallery{
+        padding: 0px;
+        padding-bottom: 10px;
+        
+    }
+    .gallery img:hover , .gallery img:active{
+    transform: scale(0.95);
+}
+}

@@ -1,0 +1,699 @@
+settings = {
+  noScriptAlt: '',
+  simpleTitle: 'Marvel Studios\'s Captain Marvel',
+  dates: [{
+    date: '2019/03/08',
+    label: 'Now Playing In Theaters',
+    img: window.dataSrc + 'assets/images/home/dateNow.png',
+  },
+  {
+    date: '2019/03/07',
+    label: 'In Theaters Tomorrow',
+    img: window.dataSrc + 'assets/images/home/dateTomorrow.png',
+  },
+  {
+    date: '2019/03/03',
+    label: 'In Theaters Friday',
+    img: window.dataSrc + 'assets/images/home/dateFriday.png',
+  },
+  {
+    date: 'default',
+    label: 'In Theaters March 8',
+    img: window.dataSrc + 'assets/images/home/date.png',
+  },
+  ],
+  framework: {
+    preloadFiles: [{
+      type: 'template',
+      url: window.dataSrc + 'assets/templates/footer.html',
+      id: 'footer-template',
+    }],
+    items: [],
+  },
+  sections: {
+    home: {
+      enabled: true,
+      preloadFiles: [{
+        type: 'template',
+        url: window.dataSrc + 'assets/templates/home.html',
+        id: 'home-template',
+      }],
+      items: [{
+        id: 'homeCards',
+        properties: {
+          alt: 'Super heroes trading cards!',
+        },
+        visible: true,
+      },
+      {
+        id: 'emailIcon',
+        properties: {
+          alt: 'E-Mail',
+        },
+        visible: true,
+      },
+      {
+        id: 'charMenuImg',
+        properties: {
+          alt: 'Characters Menu',
+        },
+        visible: true,
+      },
+      {
+        id: 'tagline',
+        properties: {
+          alt: 'Higher. Further. Faster.',
+        },
+        visible: true,
+      },
+      {
+        id: 'homeCounter',
+        properties: {
+          alt: 'Visitors counter',
+        },
+        visible: true,
+      },
+      {
+        id: 'ticketsBtn',
+        label: 'Get Tickets',
+        properties: {
+          href: 'http://fandango.com/captainmarvel',
+          target: '_blank',
+        },
+        visible: true,
+      },
+      {
+        id: 'homeTrailerBtn',
+        label: 'watch trailer',
+        properties: {
+          href: '#multimedia',
+        },
+        visible: true,
+      },
+      ],
+      nav: [{
+        label: 'Info',
+        visible: true,
+        href: '#about',
+        template: 'section',
+      },
+      {
+        label: 'Play The Game',
+        visible: true,
+        href: '#skrull',
+        template: 'section',
+      },
+      {
+        label: 'Multimedia',
+        visible: true,
+        href: '#multimedia',
+        template: 'section',
+      },
+      {
+        label: 'Guestbook',
+        visible: true,
+        href: '#guestbook',
+        template: 'section',
+      },
+      {
+        label: 'Partners',
+        visible: true,
+        href: 'https://www.marvel.com/captain-marvel-movie-partners',
+        template: 'link',
+      },
+      ],
+    },
+    about: {
+      enabled: true,
+      preloadFiles: [{
+        type: 'template',
+        url: window.dataSrc + 'assets/templates/about.html',
+        id: 'about-template',
+      }],
+      items: [{
+        id: 'aboutTitle',
+        properties: {
+          alt: 'Info',
+        },
+        visible: true,
+      },
+      {
+        id: 'aboutLast',
+        properties: {
+          alt: 'Last Image',
+        },
+        visible: true,
+      },
+      {
+        id: 'aboutNext',
+        properties: {
+          alt: 'Next Image',
+        },
+        visible: true,
+      },
+      {
+        id: 'aboutText',
+        label: '<p>Set in the 1990s, Marvel Studios’<blink> Captain Marvel</blink> is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe that follows the journey of Carol Danvers as she becomes one of the universe’s most powerful heroes. While a galactic war between two alien races reaches Earth, Danvers finds herself and a small cadre of allies at the center of the maelstrom.</p>',
+        properties: {},
+        visible: true,
+      },
+      ],
+      gallery: [{
+        image: window.dataSrc + 'assets/images/about/gallery/1.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/about/gallery/6.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/about/gallery/5.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/about/gallery/10.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/about/gallery/2.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/about/gallery/3.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/about/gallery/4.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/about/gallery/8.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/about/gallery/9.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/about/gallery/7.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      ],
+    },
+    carol: {
+      enabled: true,
+      preloadFiles: [{
+        type: 'template',
+        url: window.dataSrc + 'assets/templates/carol.html',
+        id: 'carol-template',
+      }],
+      items: [{
+        id: 'carolTitle',
+        properties: {
+          alt: 'Carol Danvers',
+        },
+        visible: true,
+      },
+      {
+        id: 'carolFlag',
+        properties: {
+          alt: 'Airforce Flag',
+        },
+        visible: true,
+      },
+      {
+        id: 'carolJet',
+        properties: {
+          alt: 'Jet',
+        },
+        visible: true,
+      },
+      {
+        id: 'carolHer',
+        label: '<span class="underline">Her</span>o',
+        properties: {},
+        visible: true,
+      },
+      {
+        id: 'carolLast',
+        properties: {
+          alt: 'Last Image',
+        },
+        visible: true,
+      },
+      {
+        id: 'carolNext',
+        properties: {
+          alt: 'Next Image',
+        },
+        visible: true,
+      },
+      ],
+      gallery: [{
+        image: window.dataSrc + 'assets/images/carol/gallery/1.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/carol/gallery/2.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/carol/gallery/3.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/carol/gallery/4.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/carol/gallery/5.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/carol/gallery/6.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/carol/gallery/7.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/carol/gallery/8.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      ],
+    },
+    skrull: {
+      enabled: true,
+      preloadFiles: [{
+        type: 'template',
+        url: window.dataSrc + 'assets/templates/skrull.html',
+        id: 'skrull-template',
+      }],
+      items: [{
+        id: 'skrullDesc',
+        label: 'Shapeshifters who live among us? Posing as grandmothers, small children, or even your friends? How can you tell and what can you do when confronted by this menace? Take the test and PREPARE YOURSELF for the coming events!!!',
+        properties: {},
+        visible: true,
+      },
+      {
+        id: 'skrullCta',
+        label: 'Can you spot the Skrull? Play Now!',
+        properties: {},
+        visible: true,
+      },
+      {
+        id: 'skrullTitle',
+        label: 'WHO ARE THE <span style="white-space: nowrap;"><div class="letter">S</div><div class="letter">K</div><div class="letter">R</div><div class="letter">U</div><div class="letter">L</div><div class="letter">L</div><div class="letter">S</div><div class="letter">?</div></span>',
+        properties: {},
+        visible: true,
+      },
+      {
+        id: 'skrullGameOver',
+        label: 'Game over!<br /><span>Your final score is <span id="gameScore"></span>.</span><div id="playAgain" class="game-restart-btn grey-border grey-btn">PLAY AGAIN</div>',
+        properties: {},
+        visible: true,
+      },
+      {
+        id: 'skrullCorrect',
+        label: '<p>Correct!</p><div class="game-next-btn grey-border grey-btn">CONTINUE</div>',
+        properties: {},
+        visible: true,
+      },
+      {
+        id: 'skrullWrong',
+        label: '<p>Wrong!</p><div class="game-next-btn grey-border grey-btn">CONTINUE</div>',
+        properties: {},
+        visible: true,
+      },
+      ],
+      game: [{
+        img: window.dataSrc + 'assets/images/skrull/screens/1.jpg',
+        x: 252,
+        y: 100,
+        a: 0,
+      },
+      {
+        img: window.dataSrc + 'assets/images/skrull/screens/2.jpg',
+        x: 490,
+        y: 230,
+        a: 1,
+      },
+      {
+        img: window.dataSrc + 'assets/images/skrull/screens/3.jpg',
+        x: 100,
+        y: 260,
+        a: 1,
+      },
+      {
+        img: window.dataSrc + 'assets/images/skrull/screens/4.jpg',
+        x: 540,
+        y: 10,
+        a: 0,
+      },
+      {
+        img: window.dataSrc + 'assets/images/skrull/screens/5.jpg',
+        x: 25,
+        y: 30,
+        a: 0,
+      },
+      {
+        img: window.dataSrc + 'assets/images/skrull/screens/6.jpg',
+        x: 288,
+        y: 200,
+        a: 1,
+      },
+      {
+        img: window.dataSrc + 'assets/images/skrull/screens/7.jpg',
+        x: 452,
+        y: 240,
+        a: 1,
+      },
+      {
+        img: window.dataSrc + 'assets/images/skrull/screens/8.jpg',
+        x: 20,
+        y: 290,
+        a: 0,
+      },
+      ],
+    },
+    kree: {
+      enabled: true,
+      preloadFiles: [{
+        type: 'template',
+        url: window.dataSrc + 'assets/templates/kree.html',
+        id: 'kree-template',
+      }],
+      items: [{
+        id: 'kreeTitle',
+        properties: {
+          alt: 'Kree',
+        },
+        visible: true,
+      }],
+      gallery: [{
+        image: window.dataSrc + 'assets/images/kree/th1.jpg',
+        alt: 'Jude Law',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/kree/th2.jpg',
+        alt: 'Group of Kree with Captain Marvel',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/kree/th3.jpg',
+        alt: 'Jude Law',
+        visible: true,
+      },
+      ],
+    },
+    fury: {
+      enabled: true,
+      preloadFiles: [{
+        type: 'template',
+        url: window.dataSrc + 'assets/templates/fury.html',
+        id: 'fury-template',
+      }],
+      items: [{
+        id: 'furyPagers',
+        properties: {
+          alt: 'Get your pager!',
+        },
+        visible: true,
+      },
+      {
+        id: 'furyImg',
+        properties: {
+          alt: 'Sam Jackson is Nick Fury',
+        },
+        visible: true,
+      },
+      ],
+      gallery: [{
+        image: window.dataSrc + 'assets/images/fury/th1.jpg',
+        alt: 'Sam Jackson as Nick Fury',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/fury/th2.jpg',
+        alt: 'Clark Gregg as Phil Coulson',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/fury/excelsior.jpg',
+        alt: ' ',
+        visible: true,
+      },
+      ],
+    },
+    multimedia: {
+      enabled: true,
+      preloadFiles: [{
+        type: 'template',
+        url: window.dataSrc + 'assets/templates/multimedia.html',
+        id: 'multimedia-template',
+      }],
+      items: [{
+        id: 'multimediaTitle',
+        properties: {
+          alt: 'Multimedia',
+        },
+        visible: true,
+      },
+      {
+        id: 'mmStereoTitle',
+        label: 'STEREOGRAMS',
+        properties: {},
+        visible: true,
+      },
+      ],
+      stereograms: [{
+        image: window.dataSrc + 'assets/images/stereograms/Captain-Marvel-stereogram1.jpg',
+        thumb: window.dataSrc + 'assets/images/stereograms/thumbs/Captain-Marvel-stereogram1.jpg',
+        label: 'Captain Marvel stereogram 1',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/stereograms/Captain-Marvel-stereogram2.jpg',
+        thumb: window.dataSrc + 'assets/images/stereograms/thumbs/Captain-Marvel-stereogram2.jpg',
+        label: 'Captain Marvel stereogram 2',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/stereograms/Captain-Marvel-stereogram3.jpg',
+        thumb: window.dataSrc + 'assets/images/stereograms/thumbs/Captain-Marvel-stereogram3.jpg',
+        label: 'Captain Marvel stereogram 3',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/stereograms/Captain-Marvel-stereogram4.jpg',
+        thumb: window.dataSrc + 'assets/images/stereograms/thumbs/Captain-Marvel-stereogram4.jpg',
+        label: 'Captain Marvel stereogram 4',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/stereograms/Captain-Marvel-stereogram5.jpg',
+        thumb: window.dataSrc + 'assets/images/stereograms/thumbs/Captain-Marvel-stereogram5.jpg',
+        label: 'Captain Marvel stereogram 5',
+        scale: 'contain',
+        visible: true,
+      },
+      ],
+      videos: [{
+        visible: true,
+        label: 'Higher',
+        video: window.dataSrc + 'assets/videos/trailer.mp4',
+        poster: window.dataSrc + 'assets/images/multimedia/poster.jpg',
+        type: 'mp4',
+      },
+      {
+        visible: true,
+        label: 'This or That',
+        video: window.dataSrc + 'assets/videos/thisorthat.mp4',
+        poster: window.dataSrc + 'assets/images/multimedia/poster2.jpg',
+        type: 'mp4',
+      },
+      ],
+      gallery: [{
+        image: window.dataSrc + 'assets/images/multimedia/gallery/1.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/2.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/3.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/4.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/5.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/6.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/7.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/8.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/9.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/10.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/11.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/12.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/13.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/14.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/15.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/16.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/17.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/18.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/19.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/20.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/21.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      {
+        image: window.dataSrc + 'assets/images/multimedia/gallery/22.jpg',
+        scale: 'contain',
+        visible: true,
+      },
+      ],
+    },
+    guestbook: {
+      enabled: true,
+      preloadFiles: [{
+        type: 'template',
+        url: window.dataSrc + 'assets/templates/guestbook.html',
+        id: 'guestbook-template',
+      }],
+      items: [{
+        id: 'guestbookTitle',
+        label: 'Our Guestbook',
+        properties: {},
+        visible: true,
+      },
+      {
+        id: 'signInBtn',
+        label: 'Sign In',
+        properties: {},
+        visible: true,
+      },
+      {
+        id: 'guestbookMessages',
+        label: '<p>All your base are belong to us!</p><p class="author">@Roy_T</p><p>I came here for the dancing baby!</p><p class="author">@GeneCo</p><p>Do you guys like websites?</p><p class="author">@Dustin</p><p>I see what you did there</p><p class="author">@Roy_T</p><p>Is anyone else concerned about Y2K?!?</p><p class="author">@Jess</p><p>MEOW!</p><p class="author">@ChewieRox</p><p>Can’t wait to see this high energy action movie!</p><p class="author">@Monica_Rambeau</p><p>BOO-YAH!</p><p class="author">@Jeromie</p><p>Higher. Further. Faster.</p><p class="author">@THE_COLLECTOR_OF_CARDS</p><p>Sick word art!</p><p class="author">@Chrissy</p><p>This whole “Internet” thing is a fad.</p><p class="author">@Greg</p><p>Does anyone actually use the pound sign? In three years no one will be using the pound sign.</p><p class="author">@A_A</p><p>C4R0L D4NV3RS IS TH3 1337 Я0XX0ЯZ!!1</p><p class="author">@Lori</p><p>I want to be a super hero when I grow up.</p><p class="author">@Ross_31</p><p>Who approved this?</p><p class="author">@J_C_</p>',
+        properties: {},
+        visible: true,
+      },
+      ],
+    },
+  },
+  sounds: {
+    enabled: true,
+    files: [{
+      id: 'music',
+      src: window.dataSrc + 'assets/sounds/loop.mp3',
+      options: {
+        volume: 0.8,
+        loop: true,
+      },
+    }, {
+      id: 'punch',
+      src: window.dataSrc + 'assets/sounds/punch.mp3',
+      options: {
+        volume: 0.8,
+        loop: false,
+      },
+    }],
+  },
+  upgrade: 'Your browser or device is incompatible<br>with this website.<br><a href=\'http://browsehappy.com/?locale=en\' target=\'_blank\' style="color: #999;">Upgrade your browser</a>',
+};
