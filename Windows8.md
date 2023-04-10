@@ -115,7 +115,7 @@ First, the styles for the demo wrapper, the container in which the whole demo wi
               perspective: 3300px;
               position: relative;
             }
-    ```
+```
 
 Now let's start with the dashboard styles and animations.
 
@@ -143,7 +143,7 @@ The first animation applied to the dashboard is fired when the page loads. The d
                 opacity:1;
               }
             }
-    ```
+```
     
 
 The dashboard also fades into the view and fades back when a tile is clicked. Once a tile is clicked, the dashboard translates back along the z-axis, decreases in size, and fades its opacity gradually till it becomes 0. And when an opened page is closed, the dashboard fades back into the view.
@@ -180,7 +180,7 @@ Here are the classes and the animations applied to the dashboard upon clicking t
               0% {transform: translateZ(-5em) scale(0); opacity:0;}
               100% {transform: translateZ(0) scale(1); opacity:1;}
             }
-    ``` 
+``` 
 
 Now we're going to style the pages.
 
@@ -243,7 +243,7 @@ Now we're going to style the pages.
               text-align: center
             }
 
-    ```
+```
 
 I've set the original position of each `r-page` in the 3D space by first rotating it about the y-axis (the vertical axis), then I moved the page 5em to the left of the screen by using `translateZ`. Always remember: when u transform an element in 3D, you transform its coordinate system along with it. What I wanted to do is move the page 5em to the left of the screen, but instead of using `translateX` I used `translateZ`, because after the first tranformation (rotation about y axis), the coordinate system was also rotated, so now the z-axis points towards the left, and the x-axis is pointing towards you, the viewer.
 
@@ -273,7 +273,7 @@ These are the class names that trigger the opening and closing of the pages, alo
   left:0;
   animation: slidePageBackLeft .8s ease-out 1 normal forwards;
 }
-    ```
+```
 
 I'm using the `animation` [shorthand property](http://www.w3.org/TR/css3-animations/#animation-shorthand-property) here. The last value `forwards` corresponds to the `animation-fill-mode` property, which must be set to `forwards`, otherwise the page will get back to its initial "closed" position after the animation is over. So, in order to keep the page open, and be able to create sequential animations, the element has to stay in the final state defined by the first animation, and from there start the second animation.
 
@@ -306,7 +306,7 @@ These are the animations for the classes applied to the pages:
 	70% {opacity:1;}
 	100% {opacity:0; left:-150%;}
   }
-    ```
+```
 
 Last but not least we'll style the dashboard tiles and define the transitions and animations applied to them when they are hovered.
 
@@ -343,7 +343,7 @@ General styles defining the size of the tiles:
             .tile-small.last {
               margin-right: 0
             }
-    ```
+```
 
 A couple of tiles contain an image along with an image caption. These tiles will get a class `fig-tile` to determine their type in the Javascript code. The colors used for the text and background of the corresponding page will be retrieved from the colors of the caption, so don't forget to define them.The caption can be either fixed, or it can slide in when the tile is hovered:
 
@@ -373,7 +373,7 @@ A couple of tiles contain an image along with an image caption. These tiles will
             .tile:hover .caption-left{
               left:0;
             }
-    ```
+```
 
 Regular tiles, with no special kind of animation, will change their background and text color on hover. In order to make sure the text is vertically centered in each tile, each one will contain a `div` with a paragraph containing the text. We'll use the table-cell display property to center this text vertically.
 
@@ -392,7 +392,7 @@ Regular tiles, with no special kind of animation, will change their background a
               display:table-cell;
               vertical-align:middle;
             }
-    ```
+```
 
 I'll skip the general styles of the tiles for sake of brevity, but make sure you set a background and text color on all tiles, even the ones that will be covered by an image, because these colors will be retrieved via Javascript and set as the colors for the corresponding page of this tile. Let's move on to the animations and transitions on the tiles.
 
@@ -413,7 +413,7 @@ For a tile's text to slide up on hover, we'll apply a class `slideTextUp`.
             .tile-1 p{
               font-size:1.3em;
             }
-    ```
+```
 
 Similarly, tiles with text sliding to the right and left, will get class names `slideTextLeft` and `slideTextRight`, with a similar structure as the above tile.
 
@@ -433,7 +433,7 @@ Similarly, tiles with text sliding to the right and left, will get class names `
             .slideTextLeft:hover div{
               transform: translateX(-100%);
             } 
-    ```
+```
 
 A couple tiles have a different hover effect, they rotate to reveal the back face of the tile. This effect is a very simple and basic "card flip" effect. I won't get into the details of this effect, but if you're new to this, you can read more about it in [this excellent tutorial](http://desandro.github.io/3dtransforms/docs/card-flip.html) by David De Sandro.
 
@@ -461,7 +461,7 @@ For this flipping effect, apply a `rotate3d` class to the tile you want to flip.
   /* hide backface visibility so that the back of the face is hidden when it's rotated */
   backface-visibility: hidden;
 }
-    ```
+```
 
 We'll rotate one of the faces in the tiles so that the two faces are back to back.
 
@@ -472,7 +472,7 @@ We'll rotate one of the faces in the tiles so that the two faces are back to bac
             .rotate3dX .back{
               transform: rotateX( 180deg );
             }
-    ```
+```
 
 And when the tile is hovered, the `.faces` `div` will be rotated to reveal the back face. 
 
@@ -483,7 +483,7 @@ And when the tile is hovered, the `.faces` `div` will be rotated to reveal the b
             .rotate3dX:hover .faces:hover{
                 transform: rotateX( 180deg );
             }
-    ```
+```
 
 For styles rotating in 3D, remember to set a background and text color for the `.front` face, so that these colors be retrieved and set to the tile's page when it is opened.
 
@@ -537,7 +537,7 @@ Now let's define responsive styles for the dashboard. Dashboard columns are init
                 font-size:3.5em;
               }
             }
-    ```
+```
 
 ### The Javascript
 
@@ -626,7 +626,7 @@ Additionally, in order to give each page the same background color and text colo
               });
 
             })();
-    ```
+```
 
 And that's it!  
  I hope you enjoyed this tutorial and found it useful! :)
