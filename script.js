@@ -48,7 +48,7 @@ $(document).ready(()=>{
                     break;
             } index++;
         }
-        $("main").append(`<a href="#"><div class='Rbig'>Hey Lau\n2017-2023</div></a>`);
+        $("main").append(`<a href="#"><div class='Vbig'>Hey Lau\n2017-2023</div></a>`);
     });
 })
 function getRandomInt(max) {

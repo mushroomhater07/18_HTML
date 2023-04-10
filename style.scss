@@ -32,19 +32,20 @@ main {
 	width: 100%;
 	margin: auto;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 25%);
 }
 $layout-breakpoint-small: 960px;
 
 @media (min-width: $layout-breakpoint-small) {
   main {
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 12.5%);
   }
   div{
     min-height: 12.5vw !important;
   }
 }
 div {
+	max-width: 100%;
     text-align: center;
 	box-sizing: border-box;
 	border-right: 1vw solid #000; //grid
