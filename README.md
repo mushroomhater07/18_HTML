@@ -1,3 +1,3 @@
 # 18_HTML
 
-https://shalev.pages.dev
+https://shalweb.pages.dev
