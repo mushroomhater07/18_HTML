@@ -1,0 +1,256 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    position: relative;
+    background-color: #333;
+    overflow: hidden;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    text-decoration: underline;
+    color: #AEA8BB;
+}
+#logo:hover{
+  color: #AEA8BB;
+}
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+  
+  /* Centered section inside the top navigation */
+.topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+  
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    float: right;
+}
+  
+  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 685px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+  
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+    .site {
+        background:#333;
+        height: auto;
+        margin:0 auto;
+        border-bottom:0px solid #dadada;
+        width: 100%;
+        position: relative;
+       
+    }
+    
+    
+}
+.site {
+    background:#333;
+    height: auto;
+    margin:0 auto;
+    border-bottom:0px solid #dadada;
+    position:fixed;
+    width: 100%;
+    top:0%;
+    left: 0%;
+}
+.fullborder{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.box {
+    width: 33%;
+    float:left;
+    text-align: center;
+    
+}
+#fire{
+    width: 100%;
+    height: 400px;
+    position: right 60% bottom 50%;
+}
+button{
+    border: 3px solid #111;
+  border-radius: 10px; 
+  background-color: rgb(229, 247, 247);
+  margin: 0;
+  
+
+}
+/*
+<style>
+
+    body  { width:960px; padding:100px 0; margin:0 auto; font-family:Calibri, sans-serif; }
+    #nav{
+      border:1px solid #ccc;
+      border-width:1px 0;
+      list-style:none;
+      margin:0;
+      padding:0;
+      text-align:center;
+    }
+    #nav li{
+      display:inline;
+    }
+    #nav a{
+      display:inline-block;
+      padding:10px;
+    }
+    a{
+      color:#c00;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    a:hover{
+      text-decoration:underline;
+    }
+
+  </style>
+/**
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+
+ul.topnav li.center {left: 50%;
+right:50%}
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+
+body  { width:960px; padding:100px 0; margin:0 auto; font-family:Calibri, sans-serif; }
+.nav{
+  border:1px solid #ccc;
+  border-width:1px 0;
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+.nav li{
+  display:inline;
+}
+.nav a{
+  display:inline-block;
+  padding:10px;
+}
+a{
+  color:#c00;
+  text-decoration:none;
+  font-weight:bold;
+}
+a:hover{
+  text-decoration:underline;
+}
+
+
+
+/*
+body {
+    margin-top: 60px;
+    background-color: #AEA8BB;
+}
+button{
+    border: 2px solid #111;
+  border-radius: 5px; 
+  background-color: "aliceblue";
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.content{
+    height: 50px;
+}
+.other{
+    margin-block-end: 10px;
+    height: 300px;   
+}
+.nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+}
+
+}
+.left50 {
+    width: 70%;
+    position: relative
+}
+.div1{
+    width:17%;
+    float:left;
+}
+.div2{
+    width:21%;
+    float:left;
+}
+.div3{
+    width:17%;
+    float:left;
+}
+.div4{
+    width:17%;
+    float:left;
+}
+.right {
+    float: right;
+    right:0%
+}
+.left {
+    float: left;
+    left:0%
+}
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  

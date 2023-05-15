@@ -40,9 +40,7 @@ $(document).ready(()=>{
                             index = 150;
                         }
                     }
-                    $("main").append(`<a href="${listHTML[indexlist]}</div></a>`);
-                    console.log(listHTML[indexlist])
-                    console.log(`<a href="${listHTML[indexlist]}</div></a>`)
+                    $("main").append(`<a href="sub/${listHTML[indexlist]}</div></a>`);
                     break;
                 default:
                     $("main").append("<div></div>");
