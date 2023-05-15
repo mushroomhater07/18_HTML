@@ -1,7 +1,7 @@
 
 $(document).ready(()=>{
     var sass = new Sass();
-    fetch('style.scss')
+    fetch('root/style.scss')
     .then(response => response.text())
     .then(data => {
         sass.options({ style: Sass.style.expanded }, function(result) {
@@ -13,7 +13,7 @@ $(document).ready(()=>{
         });
     });
     var listHTML;
-    $.get( "./list", function( data ) {
+    $.get( "root/list", function( data ) {
         listHTML = data.split(',\n');
         var indexlist = 0;var loadcontinue = true;let index = 0;
         while(index<200 || loadcontinue){
@@ -41,7 +41,8 @@ $(document).ready(()=>{
                         }
                     }
                     $("main").append(`<a href="${listHTML[indexlist]}</div></a>`);
-
+                    console.log(listHTML[indexlist])
+                    console.log(`<a href="${listHTML[indexlist]}</div></a>`)
                     break;
                 default:
                     $("main").append("<div></div>");

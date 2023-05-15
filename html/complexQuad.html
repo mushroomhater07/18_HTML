@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Hey's Quad Equation</title>
+</head>
+<body bgcolor="#ffb306">
+<DIV align="CENTER">
+<gcse:search></gcse:search>
+<B><FONT size="15" face="Comic Sans MS">Solve Quadratic Equation</FONT></B> 
+</DIV>
+<script>
+  (function() {
+    var cx = '011198202290591817187:kcma9k5f1rq';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+function reset(){
+var a,b,c;
+a="";
+b="";
+c="";
+}
+function calc(){
+var a,b,c,d,Root1,Root2;
+var save;
+
+a=Quad.a.value;
+b=Quad.b.value;
+c=Quad.c.value;
+
+d=b*b-4*a*c;
+
+if(d>0){
+Root1=(-b+Math.sqrt(d))/(2*a);
+Root2=(-b-Math.sqrt(d))/(2*a);
+
+Quad.delta.value=d;
+Quad.Root1.value=Root1;
+Quad.Root2.value=Root2;
+}
+
+if(d==0){
+
+Root1=(-b)/(2*a);
+
+Quad.delta.value=d;
+Quad.Root1.value=Root1;
+Quad.Root2.value=Root1;
+
+}
+
+if(d<0){
+
+save = -d;
+
+Root1=(-b/(2*a))+"+"+(Math.sqrt(save))/(2*a)+"i";
+Root2=(-b/(2*a))+"-"+(Math.sqrt(save))/(2*a)+"i";
+
+Quad.delta.value=d;
+Quad.Root1.value=Root1;
+Quad.Root2.value=Root2;
+alert("No real root");
+
+
+}
+
+
+}
+function Surprise(){
+document.write("<FONT size='100' face='Segoe Script'>Hello World</FONT>");
+}
+</script>
+</DIV>
+
+<form name=Quad>
+<DIV align="CENTER">
+<input type=text id=a maxlength="7" size="8">
+<FONT size="10" face="Arial Black">X</FONT>
+<FONT size="10" face="Arial Black"><sup>2</sup> + </FONT>  
+<input type=text id=b maxlength="7" size="8">
+<FONT size="10" face="Arial Black">X+</FONT>  
+<input type=text id=c maxlength="7" size="8">
+<FONT size="10" face="Arial Black">= 0</FONT>  
+<P>
+<input type=button value="calculate" onmouseenter="calc();" onmouseleave="reset();" onclick="Surprise();">
+<br>
+<FONT size="5" face="Lucida Console">Delta:</FONT>  
+<input type=text id=delta disabled size="35">
+<br> 
+<FONT size="5" face="Microsoft JhengHei">Root 1:</FONT> 
+<input type=text id=Root1 disabled size="35">
+<br>
+<FONT size="5" face="Segoe Script">Root 2:</FONT>
+<input type=text id=Root2 disabled size="35">
+<P>
+<FONT size="25" face="Microsoft JhengHei">If no real root,PLEASE press enter ONLY !!</FONT>
+<br>
+<FONT size="100" face="Segoe Script">&copy; Hey Lau 2018-2018</FONT>
+ </DIV>
+</form>
+</body>
+</html>

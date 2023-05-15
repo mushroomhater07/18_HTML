@@ -1,0 +1,74 @@
+﻿<HTML>
+<head>
+<title>HTML editor
+</title>
+
+<script language="JavaScript">
+    function viewHtml(){
+     var wnd=window.open("",'nn','width=500,height=450,resizable=yes');
+     var console=wnd.document;
+     console.open();
+     console.write(document.HTMLForm.html_src.value);
+     console.close();
+   }
+  </script>
+<STYLE type="text/css"> 
+<!-- 
+A:hover { color:"ffffff" } 
+
+--> 
+</STYLE> 
+</head>
+<body bgcolor="green" >
+<font color="yellow" face="Sitka Small" size=4>
+<center><b>Made by
+</b></center>
+<font color="orange" face="Georgia" size=8>
+<center><b>Hey Lau
+</b></center><br>
+
+
+<FORM method=POST action="" name='HTML'>
+  <DIV align="CENTER">
+    <B><FONT size="4" face="Sitka Small">HTML editor</FONT></B> 
+  </DIV>
+  <DIV align="CENTER">
+  </DIV>
+  <TABLE border="0" width="95%">
+    <TR>
+      <TD> 
+        <DIV align="CENTER">
+          <textarea cols="65" rows="10" name="html_src">&lt;HTML&gt;
+&lt;HEAD&gt; &lt;TITLE&gt;Making HTML&lt;/TITLE&gt; &lt;/HEAD&gt;
+&lt;BODY&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;</textarea>
+        </DIV>
+      </TD>
+    </TR>
+  </TABLE>
+  <DIV align="CENTER">
+    <TABLE border="0" width="95%">
+      <TR> 
+        <TD width="50%"> 
+          <DIV align="RIGHT">
+            <INPUT type=BUTTON value=" Click to see result " name="submit" onClick='viewHtml()'>        
+          </DIV>
+        </TD>
+        <TD width="50%"> 
+          <DIV align="LEFT">
+            <INPUT type=RESET value="Reset ?" name="reset ?">  
+            </DIV>
+        </TD>
+      </TR>
+    </TABLE>
+      </DIV>
+</FORM>
+
+<br><br>
+<a href="javascript:window.close();"></a> <br>
+</font>
+
+<br>
+
+</body></HTML>
